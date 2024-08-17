@@ -14,8 +14,6 @@ function postOrder(order) {
     })
         .then(res => res.json())
         .then(res => showNotification());
-
-
 }
 
 /**

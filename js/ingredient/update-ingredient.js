@@ -1,6 +1,6 @@
 
 function fetchIngredient(_id) {
-    fetch(`http://127.0.0.1:5000/ingredient/id/${_id}`)
+    fetch(`http://127.0.0.1:5000/ingredient/${_id}`)
         .then(response => response.json())
         .then(ingredient => {
             $("#_id").val(ingredient._id);
@@ -13,12 +13,12 @@ function fetchIngredient(_id) {
 function loadInformation() {
     let urlParams = new URLSearchParams(window.location.search);
     let _id = urlParams.get('_id');
-    fetchIngredient(_id)
+    fetchIngredient(_id);
 }
 
 function putIngredient(ingredient) {
 
-    fetch('http://127.0.0.1:5000/ingredient/', {
+    fetch('http://127.0.0.1:5000/ingredient/${_id}', {
         method: 'PUT',
         body: JSON.stringify(ingredient),
         headers: {
@@ -52,7 +52,7 @@ function getIngredientData() {
     return {
         _id: $("input[id='_id']").val(),
         name: $("input[id='name']").val(),
-        price: $("input[id='price']").val()
+        price: $("input[id='price']").val(),
     };
 }
 
