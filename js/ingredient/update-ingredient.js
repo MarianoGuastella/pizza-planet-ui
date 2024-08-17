@@ -17,8 +17,8 @@ function loadInformation() {
 }
 
 function putIngredient(ingredient) {
-
-    fetch('http://127.0.0.1:5000/ingredient/${_id}', {
+    const _id = ingredient._id;
+    fetch(`http://127.0.0.1:5000/ingredient/${_id}`, {
         method: 'PUT',
         body: JSON.stringify(ingredient),
         headers: {

@@ -1,5 +1,6 @@
 
 function fetchBeverage(_id) {
+    console.log("ID de la bebida:", _id);
     fetch(`http://127.0.0.1:5000/beverage/${_id}`)
         .then(response => response.json())
         .then(beverage => {
@@ -17,8 +18,8 @@ function loadInformation() {
 }
 
 function putBeverage(beverage) {
-
-    fetch('http://127.0.0.1:5000/beverage/${_id}', {
+    const _id = beverage._id;
+    fetch(`http://127.0.0.1:5000/beverage/${_id}`, {
         method: 'PUT',
         body: JSON.stringify(beverage),
         headers: {
