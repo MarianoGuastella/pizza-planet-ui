@@ -1,9 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
     <link
@@ -52,7 +55,11 @@
         <td class="col-2 text-right">${{total_price}}</td>
         <td class="col-2">
           <div class="text-center">
-            <a class="btn btn-success btn-sm view-order" href="/app/order/order-detail.html?_id={{_id}}">View</a>
+            <a
+              class="btn btn-success btn-sm view-order"
+              href="/app/order/order-detail.html?_id={{_id}}"
+              >View</a
+            >
           </div>
         </td>
       </tr>
@@ -83,6 +90,8 @@
 
     <script src="/js/navbar/navbar.js"></script>
     <script src="/js/order/orders.js"></script>
-    <script> fetchNavbar('../navbar/navbar.html')</script>
+    <script>
+      fetchNavbar("../navbar/navbar.html");
+    </script>
   </body>
 </html>

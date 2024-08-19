@@ -1,9 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
     <link
@@ -21,7 +24,7 @@
     <!-- HEADER -->
 
     <header id="header"></header>
-    
+
     <!-- TABLE -->
 
     <div class="container">
@@ -42,7 +45,11 @@
         </div>
 
         <div class="text-center">
-          <a class="btn btn-warning btn-lg add-size" href="/app/size/add-size.html">Add New Size</a>
+          <a
+            class="btn btn-warning btn-lg add-size"
+            href="/app/size/add-size.html"
+            >Add New Size</a
+          >
         </div>
       </div>
     </div>
@@ -54,7 +61,9 @@
         <td class="col-3">${{price}}</td>
         <td class="col-3 text-center">
           <div class="text-center">
-            <a class="btn btn-success btn-sm update-size disabled" href="/app/size/update-size.html?_id={{_id}}"
+            <a
+              class="btn btn-success btn-sm update-size disabled"
+              href="/app/size/update-size.html?_id={{_id}}"
               >Update</a
             >
           </div>
@@ -87,6 +96,8 @@
 
     <script src="/js/navbar/navbar.js"></script>
     <script src="/js/size/size.js"></script>
-    <script> fetchNavbar('../navbar/navbar.html')</script>
+    <script>
+      fetchNavbar("../navbar/navbar.html");
+    </script>
   </body>
 </html>
